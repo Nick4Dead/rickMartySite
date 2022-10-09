@@ -23,8 +23,8 @@ body {
   text-decoration: none;
   color: azure;
 }
-a:hover{
-    text-shadow: 5px -2px 15px #64BD00;
+.menu a:hover {
+  text-shadow: 5px -2px 15px #64bd00;
 }
 .menu li {
   display: inline;
