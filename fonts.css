@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Dikovina";
+  src: local("Dikovina"), url("../fonts/dikovina.otf") format("opentype"),
+    url("../fonts/dikovina.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
