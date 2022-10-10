@@ -1,0 +1,70 @@
+body {
+  background-color: rgb(21, 21, 21);
+}
+.logo {
+  width: 494px;
+  height: 151px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.menu {
+  font-family: Dikovina;
+  font-size: 32px;
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 55px;
+  margin-bottom: 80px;
+  padding-right: 0;
+  text-align: center;
+}
+.menu a {
+  text-decoration: none;
+  color: azure;
+}
+.menu a:hover {
+  text-shadow: 5px -2px 15px #64bd00;
+}
+.menu li {
+  display: inline;
+  margin-right: 55px;
+  margin-left: 55px;
+}
+.line {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wordEpisode {
+  font-family: Dikovina;
+  font-size: 24px;
+  color: azure;
+  text-align: center;
+}
+.test {
+  margin: 0 auto;
+  position: relative;
+}
+img {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+}
+.content {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  color: azure;
+  overflow: hidden;
+}
+.overlay {
+  opacity: 0;
+}
+.test :hover img {
+  opacity: 0.5;
+}
+.test :hover .overlay {
+  opacity: 1;
+}
