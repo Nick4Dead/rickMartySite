@@ -42,29 +42,57 @@ body {
   color: azure;
   text-align: center;
 }
-.test {
-  margin: 0 auto;
-  position: relative;
+
+.imagesOfEpisodes{
+  display: flex;
+  justify-content: center;
 }
+.episodeImg{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.picture{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* .test {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  /* width: 100%; */
+  /* position: relative; */
+  /* box-sizing: border-box; */
+/* }
 img {
   opacity: 1;
   display: block;
   transition: 0.5s ease;
-}
-.content {
+} */
+/* .content {
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: azure;
   overflow: hidden;
-}
-.overlay {
+} */
+/* .overlay {
   opacity: 0;
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  color: azure;
 }
-.test :hover img {
+.test:hover img {
   opacity: 0.5;
 }
-.test :hover .overlay {
+.test:hover .overlay {
   opacity: 1;
-}
+} */
