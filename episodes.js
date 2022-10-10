@@ -13,7 +13,7 @@ async function pushToHtml() {
   const container = document.createElement("div");
   container.classList.add("episodeImg");
 
-  const containerId = document.getElementById("container-for-images");
+  const containerId = document.getElementById("containerForImages");
   containerId.appendChild(container);
 
   for (item of arrOfImages) {
