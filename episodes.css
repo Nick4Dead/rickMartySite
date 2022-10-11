@@ -63,11 +63,15 @@ p {
 }
 .episodeImg {
   position: relative;
+  box-sizing: border-box;
+  overflow:hidden ;
 }
 .picture {
   width: 300px;
   height: 300px;
   object-fit: cover;
+
+  white-space: pre-wrap;
 }
 .description {
   font-family: Helvetica;
@@ -77,6 +81,9 @@ p {
   position: absolute;
   color: azure;
   font-size: 14px;
+  width: 80%;
+  height: 200px;
+  text-align: center;
   overflow: hidden;
   opacity: 0;
   -webkit-user-select: none;
