@@ -1,14 +1,6 @@
 async function getEpisodeInfo() {
   let episode = await fetch("http://193.124.118.129:7899/seasons/0");
   let data = await episode.json();
-  // const arrWithImg = [];
-  // for (item of data) {
-  //   arrWithImg.push(item.image);
-  //   arrWithImg.push(item.description)
-  //   console.log(arrWithImg);
-
-  // }
-  // return arrWithImg;
   return data
 }
 
@@ -33,15 +25,9 @@ async function pushToHtml() {
     descrip.classList.add('description')
     container.appendChild(descrip)
 
-    
+
     containerId.appendChild(container);
 
   }
-
-  // for (let i=0;i<arrOfImages.length;i++) {
-  //   if (arrOfImages[i]%2==0){
-  //   }else{
-  //   }
-  // }
 }
 pushToHtml();
