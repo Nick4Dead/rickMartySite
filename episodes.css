@@ -1,6 +1,12 @@
 body {
   background-color: rgb(21, 21, 21);
 }
+h3 {
+  font-family: Helvetica;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 p {
   padding: 0;
   margin: 0;
@@ -64,6 +70,7 @@ p {
   object-fit: cover;
 }
 .description {
+  font-family: Helvetica;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -72,10 +79,12 @@ p {
   font-size: 14px;
   overflow: hidden;
   opacity: 0;
-}
-.picture:hover {
-  opacity: 0.5;
+  -webkit-user-select: none;
 }
 .episodeImg:hover .description {
   opacity: 1;
+  cursor: pointer;
+}
+.episodeImg:hover .picture {
+  filter: brightness(40%);
 }

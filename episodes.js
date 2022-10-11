@@ -24,6 +24,12 @@ async function pushToHtml() {
     descrip.innerText = episode.description
     descrip.classList.add('description')
     container.appendChild(descrip)
+    const h = document.createElement("h3")
+    h.innerText = "N Эпизод"
+
+    // h.setAttribute("id","h")
+    // document.querySelector("h").innerText = 'N Эпизод'
+    descrip.prepend(h)
 
 
     containerId.appendChild(container);
