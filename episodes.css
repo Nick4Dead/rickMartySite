@@ -1,6 +1,10 @@
 body {
   background-color: rgb(21, 21, 21);
 }
+p {
+  padding: 0;
+  margin: 0;
+}
 .logo {
   width: 494px;
   height: 151px;
@@ -15,7 +19,7 @@ body {
   list-style-type: none;
   padding-left: 0;
   margin-top: 55px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   padding-right: 0;
   text-align: center;
 }
@@ -37,26 +41,41 @@ body {
   margin-right: auto;
 }
 .wordEpisode {
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-family: Dikovina;
   font-size: 24px;
   color: azure;
   text-align: center;
 }
 
-.imagesOfEpisodes{
-  display: flex;
-  justify-content: center;
-}
-.episodeImg{
+.imagesOfEpisodes {
   display: grid;
   grid-gap: 30px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 300px 300px 300px;
   justify-content: center;
-  box-sizing: border-box;
 }
-.picture{
+.episodeImg {
+  position: relative;
+}
+.picture {
   width: 300px;
   height: 300px;
   object-fit: cover;
-  object-position: center;
+}
+.description {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: azure;
+  font-size: 14px;
+  overflow: hidden;
+  opacity: 0;
+}
+.picture:hover {
+  opacity: 0.5;
+}
+.episodeImg:hover .description {
+  opacity: 1;
 }
