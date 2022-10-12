@@ -53,11 +53,13 @@ body {
   justify-content: center;
 }
 .char {
-
   width: 800px;
   margin: auto;
   font-family: Helvetica;
   color: azure;
+}
+.bio{
+  font-size: 16px;
 }
 .key {
   font-weight: bold;
