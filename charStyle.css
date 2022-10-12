@@ -52,3 +52,13 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
 }
+.char {
+
+  width: 800px;
+  margin: auto;
+  font-family: Helvetica;
+  color: azure;
+}
+.key {
+  font-weight: bold;
+}
