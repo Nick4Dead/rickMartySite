@@ -12,7 +12,7 @@ async function test(event) {
 async function addToHtml() {
   let characters = await getCharactersFromApi();
   const containerDiv = document.createElement("div");
-  document.createElement("div").classList.add("charImg");
+  containerDiv.classList.add("charImg");
 
   let container = document.getElementById("cont");
   container.appendChild(containerDiv);
