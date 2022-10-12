@@ -37,26 +37,29 @@ async function addToHtml() {
   }
 }
 
-
 async function getCharById(id) {
-  let apiInfo = await fetch(
-    `https://rickandmortyapi.com/api/character/${id}`
-  );
+  let apiInfo = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
   let data = await apiInfo.json();
   const container = document.createElement("div");
-  container.classList.add('char')
-  const infoGender = document.createElement('div')
-  infoGender.innerHTML = "<span class = 'key'> Пол: </span>" + data.gender
-  const infoStatus = document.createElement("div")
-  infoStatus.innerHTML = "<span class = 'key'> Статус: </span>" + data.status
-  const infoName = document.createElement("div")
-  infoName.innerHTML = "<span class = 'key'> Имя: </span>" + data.name
-  container.appendChild(infoName)
-  container.appendChild(infoStatus)
-  container.appendChild(infoGender)
-  document.body.append(container)
+  container.classList.add("char");
+  const infoGender = document.createElement("div");
+  infoGender.innerHTML = "<span class = 'key'> Пол: </span>" + data.gender;
+  const infoStatus = document.createElement("div");
+  infoStatus.innerHTML = "<span class = 'key'> Статус: </span>" + data.status;
+  const infoName = document.createElement("div");
+  infoName.innerHTML = "<span class = 'key'> Имя: </span>" + data.name;
+  const infoSpecies = document.createElement("div")
+  infoSpecies.innerHTML = "<span class = 'key'> Разновидность: </span>" + data.species;
+  container.appendChild(infoName);
+  container.appendChild(infoSpecies)
+  container.appendChild(infoStatus);
+  container.appendChild(infoGender);
+  document.body.append(container);
   console.log(container);
+  let word = document.querySelector(".wordChar");
+  word.setAttribute("id", "word");
+  document.getElementById("word").innerHTML = "Персонаж";
+  console.log(word);
 }
-
 
 addToHtml();
