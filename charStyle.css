@@ -53,9 +53,11 @@ body {
   justify-content: center;
 }
 .char {
+
+  width: 800px;
+  margin: auto;
   font-family: Helvetica;
   color: azure;
-  padding-left: 250px;
 }
 .key {
   font-weight: bold;
