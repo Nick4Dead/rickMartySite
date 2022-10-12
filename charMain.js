@@ -56,8 +56,6 @@ async function getCharById(id) {
   container.appendChild(getKeyValue("Пол:", data.gender));
   container.appendChild(h3);
   container.appendChild(p);
-
-  // container.appendChild(data.bio);
   document.body.append(container);
 
   document.querySelector(".wordChar").innerHTML = "Персонаж";
