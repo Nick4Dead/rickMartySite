@@ -36,15 +36,26 @@ function getKeyValue(key, value) {
   return element;
 }
 async function getCharById(id) {
-  let apiInfo = await fetch(`https://rickandmortyapi.com/api/character/${id}`);
+  let apiInfo = await fetch(`http://193.124.118.129:7899/characters/${id}`);
   let data = await apiInfo.json();
   const container = document.createElement("div");
   container.classList.add("char");
+  const h2 = document.createElement("h2");
+  h2.classList.add("h2");
+  h2.innerText = data.name;
+  const h3 = document.createElement("h3");
+  h3.classList.add("h3");
+  h3.innerText = "Биография";
+  const p = document.createElement("p")
+  p.classList.add('bio')
+  p.innerText = data.bio
 
-  container.appendChild(getKeyValue("Имя:", data.name));
+  container.appendChild(h2);
   container.appendChild(getKeyValue("Разновидность:", data.species));
   container.appendChild(getKeyValue("Статус:", data.status));
   container.appendChild(getKeyValue("Пол:", data.gender));
+  container.appendChild(h3);
+  container.appendChild(p);
   document.body.append(container);
 
   document.querySelector(".wordChar").innerHTML = "Персонаж";
